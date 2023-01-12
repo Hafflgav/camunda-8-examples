@@ -27,3 +27,7 @@ To mock the communication with another system we are simply going to coll the [M
 asynchronously which waits 2 seconds before actually correlating the message. 
 
 Take a look on the BPMN file for this [here](./src/main/resources/BPMN/MessageCorrelation.bpmn).
+
+#### Triggering another process to start while correlating a message
+It is possible to start another process featuring the same global message reference whilst correlating the message from the example before. 
+This is exemplary modeled in the [MessageStartEvent.bpmn](./src/main/resources/BPMN/MessageStartEvent.bpmn) file.

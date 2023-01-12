@@ -17,7 +17,7 @@ import java.util.UUID;
 @SpringBootApplication
 @EnableScheduling
 @EnableZeebeClient
-@Deployment(resources = "classpath:/BPMN/MessageCorrelation.bpmn")
+@Deployment(resources = {"classpath:/BPMN/MessageCorrelation.bpmn", "classpath:/BPMN/MessageStartEvent.bpmn"})
 public class ExamplesApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ExamplesApplication.class, args);
